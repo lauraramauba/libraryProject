@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900|Lato:300,400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+/***** NAV *****/
+nav {
+    padding: 1.5rem 4rem 1.5rem 4rem;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 9999;
+}
+
+.nav-logo {
+    max-width: 120px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    width: 80%;
+}
+
+.nav-li {
+    display: inline-block;
+    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.nav-li a {
+    text-decoration: none;
+    color: #cc0000;
+}
+
+.nav-li a:hover {
+    color: #ffcccc;
+}
+
+.nav-search i {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #cc0000;
+}
+
+/**** BANNER ****/
+
+.banner-content {
+    background-image: url(../img/banner-christmas.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    padding-top: 80px;
+}
+
+.banner-contentContainer h1{
+    line-height: 4rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-top: 10rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+/**** SECTIONS ****/
+
+.home-catalog {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.home-catalog h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #ff6666;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.home-books {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.book-teaser {
+    margin: 11px;
+}
+
+.book-teaser a {
+    text-decoration: none;
+    color: #333;
+}
+
+.book-teaser a:hover {
+    opacity: 0.6;
+    color: #ff6666;
+}
+
+.book-teaser-title{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    max-width: 175px;
+}
+
+.book-teaser-desc {
+    color: #737373;
+    font-family: 'Lato', sans-serif;
+}
+
+.book-teaser a img{
+    max-width: 175px;
+}
+
+/**** SECTION BOOK SELECTION ****/
+
+.home-books-selection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bg-book-selection {
+    width: 50%;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+
+.bg-book-selection .book-teaser {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 3%;
+}
+
+.first-selection {
+    background-image: url(../img/bg-book-selection1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.second-selection {
+    background-image: url(../img/bg-book-selection2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-book-selection .book-teaser a img {
+    max-width: 100px;
+}
+
+.bg-book-selection .book-teaser .book-teaser-title{
+    max-width: 100px;
+    font-size: 1rem;
+}
+
+/**** FOOTER ****/
+
+footer {
+    background-color: #333;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+
+footer div ul {
+    list-style-type: none;
+    padding: 15px;
+}
+
+footer div ul li{
+    padding-bottom: 5px;
+}
+
+footer div ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+footer div ul li a:hover{
+    color: #ff6666;
+}
+
+.footer-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.footer-social ul li {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.footer-social i {
+    font-size: 1.4rem;
+}
+
+.footer-social ul li.footer-title {
+    display: block;
+}
+
+.footer-social p {
+    color: #fff;
+    padding: 5px 15px 15px 15px;
+    line-height: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+}
+
+@media (min-width: 1200px) {
+    nav ul {
+        width: 70%;
+    }
+ }
+
+ @media (min-width: 980px) and (max-width: 1199px) {
+    nav ul {
+        width: 60%;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    nav ul {
+        width: 60%;
+    }
+    .bg-book-selection {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .bg-book-selection {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .book-teaser a img {
+        max-width: 140px;
+    }
+
+    .book-teaser-title {
+        max-width: 140px;
+    }
+
+    .book-teaser-desc {
+        max-width: 140px;
+    }
+    
+    .bg-book-selection {
+        width: 100%;
+    }
+    .bg-book-selection .book-teaser a img {
+        max-width: 80px;
+    }
+    
+    .bg-book-selection .book-teaser .book-teaser-title{
+        max-width: 80px;
+        font-size: 0.78rem;
+    }
+    .bg-book-selection .book-teaser .book-teaser-desc {
+        font-size: 0.7rem;
+    }
+}
